@@ -37,8 +37,28 @@
     height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* position: relative; */
     }
+
+    .hero-text { 
+      line-height: 1.4em;
+      text-align: center; 
+      z-index: 9;
+      color:#361A1A;
+      background: rgba(250, 240, 215, .6);
+      padding: 20px;
+      }
+
+      .hero-image-mobile {
+        display: none;
+      }
+
+      .hero-text-mobile {
+        display: none;
+      }
 
     .hero-image-GI{
       background-image: url(Images/General\ Information.jpg);
@@ -79,42 +99,37 @@
 
 }
 
+
 @media (max-width: 600px){
   .hero-image{
-    background-image: url(Images/HomePage.jpg);
-    height: 100vh;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    
+    display: none;
     }
+
     .hero-text{ 
-      position:absolute;
-      top:40%;
-      left:30%;
-      line-height: 20px;
+     display: none;
+      }
+   
+      .hero-image-mobile {
+        display: block;
+        width: 100%;
+        height: 60vh;
+    background-size: cover;
+    background-image: url(Images/HomePage.jpg);
+    background-repeat: no-repeat;
+      }
+
+      .hero-text-mobile {
+        display: block;
       text-align: center; 
-      z-index: 9;
       color:#361A1A;
       background: rgba(250, 240, 215, .6);
       padding: 20px;
-      
-  
       }
+
+ 
 }
 
-    .hero-text{ 
-    position:absolute;
-    top:40%;
-    left:30%;
-    line-height: 20px;
-    text-align: center; 
-    z-index: 9;
-    color:#361A1A;
-    background: rgba(250, 240, 215, .6);
-    padding: 20px;
-
-    }
+ 
 
     .section-text{ 
       position:absolute;
